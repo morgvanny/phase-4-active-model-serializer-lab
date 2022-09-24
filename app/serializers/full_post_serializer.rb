@@ -1,5 +1,5 @@
 class FullPostSerializer < ActiveModel::Serializer
   attributes :title, :content
-  belongs_to :author, serializer: PostAuthorSerializer
+  belongs_to :author
   has_many :tags
 end
